@@ -1,13 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+}
 .container {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: .5fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 2fr;
+    height: 100 vh;
 }
 
 .Dashboard-logo {
     grid-column: 1 /2;
     grid-row: 1/2;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: aqua;
 }
 
 .header{
     grid-column: 2 / 4;
+}
+
+.Dashboard-options {
+    grid-column: 1/2;
+    grid-row: 2/5;
+}
+.profile-header {
+    grid-column: 2 /4;
+    grid-row: 2/3;
+}
+
+.projects {
+    grid-column: 2/3;
+    grid-row: 3/5;
+}
+
+ .Dashboard-logo img {
+    height: 6vh;
+    width: auto;
+}
+
+.Dashboard-logo p {
+    font-size: 2rem;
+    color: #b90303;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    
 }
