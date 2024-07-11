@@ -1,12 +1,20 @@
 body {
     margin: 0;
     padding: 0;
+    height: 100vh;
 }
+
+a {
+    text-decoration: none; 
+    color: inherit; 
+}
+    
+
+
 .container {
     display: grid;
     grid-template-columns: .5fr 2fr 1fr;
     grid-template-rows: 1fr 1fr 2fr 2fr;
-    height: 100 vh;
 }
 
 .Dashboard-logo {
@@ -16,7 +24,7 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
-    background-color: aqua;
+    background-color: #0FA4AF;
 }
 
 .header{
@@ -26,6 +34,16 @@ body {
 .Dashboard-options {
     grid-column: 1/2;
     grid-row: 2/5;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    gap: 40px;
+    background-color: #0FA4AF;
 }
 .profile-header {
     grid-column: 2 /4;
@@ -38,14 +56,26 @@ body {
 }
 
  .Dashboard-logo img {
-    height: 6vh;
+    height: 60px;
     width: auto;
 }
 
 .Dashboard-logo p {
     font-size: 2rem;
-    color: #b90303;
     font-weight: bolder;
     font-family: 'Times New Roman', Times, serif;
     
+}
+
+.Dashboard-options img {
+    height: 30px;
+    
+}
+
+.options-flex {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 15px;
+    gap: 10px;
 }
